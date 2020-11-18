@@ -98,6 +98,19 @@ function appendTaskDOM(tarea) {
     const taskId = event.currentTarget.dataset.taskId;
     taskStatus(taskId, complete);
   });
+
+  // ocultarlas (hide)
+
+  // falta terminar (posible solucion o ayuda para trabajon en clase)
+
+  // const incompletas = tareas.filter(tarea) => !tarea.complete);
+
+  // if (checkbox.addEventListener('click', (event) => {
+  //   const complete = event.currentTarget.checked;
+  //   const taskId = event.currentTarget.dataset.taskId;
+  //   taskStatus(taskId, incompletas);
+  // });
+
   // CONTROLADOR - Evento para borrar tareas.
   buttonDelete.addEventListener('click', (event) => {
     const taskId = event.currentTarget.dataset.taskId;
@@ -108,7 +121,7 @@ function appendTaskDOM(tarea) {
 }
 
 // VISTA - refreshTasksDOM(): Refresca la lista completa de tareas en el DOM.
-// PENDIENTE...
+// PENDiENTE...
 
 function refreshTasksDOM(tasks) {
   //...
